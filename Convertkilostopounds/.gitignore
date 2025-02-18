@@ -1,0 +1,56 @@
+# Gradle
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+gradle.properties
+
+# Android Studio / IntelliJ IDEA
+*.iml
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/gradle.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/shelf/
+.idea/httpRequests/
+
+# Keystore files (security reasons)
+*.jks
+*.keystore
+
+# Log files
+*.log
+hs_err_pid*
+replay_pid*
+
+# Virtual machine crash logs
+hs_err_pid*
+replay_pid*
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Node.js (for React Native projects)
+node_modules/
+
+# Flutter (if used)
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# APKs and Bundles
+*.apk
+*.aab
+
+# Misc
+out/
