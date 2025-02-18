@@ -1,36 +1,30 @@
 package ir.hajkarami.generatingluckynumbers
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import ir.hajkarami.generatingluckynumbers.databinding.ActivityMainBinding
+import ir.hajkarami.generatingluckynumbers.databinding.ActivityMain2Binding
+import kotlin.random.Random
 
 class MainActivity2 : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
-    private var userName = "saleh"
+    private lateinit var binding: ActivityMain2Binding
+    private var userName: String = "Guest"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.button.setOnClickListener {
-            if (! binding.editTextText.text.isEmpty())
-            userName = binding.editTextText.text.toString()
-            else{
-                userName = "salehHajkarami is Developer!"
-                Toast.makeText(this,"you do not enter your name !!",Toast.LENGTH_SHORT).show()
-            }
-            val intent : Intent = Intent(this,MainActivity2::class.java)
-            intent.putExtra("userName",userName)
-            startActivity(intent)
-        }
+
+        userName = intent.getStringExtra("userName") ?: "Guest"
+
+        // نمایش عدد تصادفی
+        binding.resultNumber.text = generateRandomInteger().toString()
     }
 
+    private fun generateRandomInteger(): Int {
+        return Random.nextInt(1, 101)
+    }
 }
