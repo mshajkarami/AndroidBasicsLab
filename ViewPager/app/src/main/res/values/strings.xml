@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ViewPager</string>
     <string name="hello_fragment1">Hello fragment 1</string>
+    <string name="hello_fragment2">Hello fragment 2</string>
 </resources>
