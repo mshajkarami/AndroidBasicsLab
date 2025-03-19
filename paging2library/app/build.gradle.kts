@@ -45,4 +45,17 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+
+    // Add Paging
+    val paging_version = "2.1.2"
+
+    implementation("androidx.paging:paging-runtime:$paging_version") // For Kotlin use paging-runtime-ktx
+
+    // alternatively - without Android dependencies for testing
+    testImplementation("androidx.paging:paging-common:$paging_version") // For Kotlin use paging-common-ktx
+
+    // optional - RxJava support
+    implementation("androidx.paging:paging-rxjava2:$paging_version") // For Kotlin use paging-rxjava2-ktx
+
 }
