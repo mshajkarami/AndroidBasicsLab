@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("org.jetbrains.kotlin.kapt")
+
 }
 
 android {
@@ -33,6 +35,10 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    kapt {
+        correctErrorTypes = true
+        useBuildCache = true
+    }
 }
 
 dependencies {
@@ -57,5 +63,9 @@ dependencies {
 
     // optional - RxJava support
     implementation("androidx.paging:paging-rxjava2:$paging_version") // For Kotlin use paging-rxjava2-ktx
+
+    val room_version = "2.6.1"
+
+    implementation("androidx.room:room-runtime:$room_version")
 
 }
