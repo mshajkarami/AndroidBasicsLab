@@ -15,8 +15,11 @@ public class MyWorker extends Worker {
     @NonNull
     @Override
     public Result doWork() {
+        // get the data
+        int countLimit = getInputData().getInt("count_Limit", 0);
+
         // Do the work here--in this case, count to 1000.
-        for (int i = 0; i <= 1000; i++) {
+        for (int i = 0; i <= countLimit; i++) {
             Log.i("Counter", "Count is: " + i);
         }
         return Result.success();
