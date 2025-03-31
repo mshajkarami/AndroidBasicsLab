@@ -40,4 +40,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    val work_version = "2.9.1"
+
+    // (Java only)
+    implementation("androidx.work:work-runtime:$work_version")
 }
