@@ -33,19 +33,26 @@ public class MainActivity extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
 
         // Get a reference to a specific node in the database
-        DatabaseReference myRef = database.getReference("message");
+//        DatabaseReference myRef = database.getReference("message");
+        DatabaseReference myRef = database.getReference("Users");
 
         // Write a value to the specified database location
-        myRef.setValue("Hello from our Course!");
+//        myRef.setValue("Hello from our Course!");
 
         TextView textView = findViewById(R.id.textView);
+
+        // Create User
+        User user1 = new User("Ali","AliGH@gmail.com");
+        myRef.setValue(user1);
 
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String newVale = snapshot.getValue(String.class);
+//                String newVale = snapshot.getValue(String.class);
+//                textView.setText(newVale);
+                User user =  snapshot.getValue(User.class);
+                textView.setText("Email is " + user.getEmail());
 
-                textView.setText(newVale);
             }
 
             @Override
