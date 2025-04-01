@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "376021262475",
+    "project_id": "fir-app-6d3d2",
+    "storage_bucket": "fir-app-6d3d2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376021262475:android:344b1febb345dd1fe4748e",
+        "android_client_info": {
+          "package_name": "ir.hajkarami.firebaseapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3tjsqyDxcXn2G-HubA_qcXdou6u3G1ao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
