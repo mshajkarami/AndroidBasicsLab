@@ -61,6 +61,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        updateBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                UpdateSpecificDocument();
+            }
+        });
+
+        deleteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DeleteAll();
+            }
+        });
+
     }
 
     private void SaveDataNewDocument() {
@@ -86,6 +100,18 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private void UpdateSpecificDocument(){
+        String name = nameET.getText().toString();
+        String email = emailET.getText().toString();
+
+        mDocumentReference.update("name" , name);
+        mDocumentReference.update("email" , email);
+    }
+
+    private void DeleteAll(){
+        mDocumentReference.delete();
     }
 
 }
