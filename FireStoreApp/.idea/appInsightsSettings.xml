@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="ir.hajkarami.firestoreapp" />
+                  <option name="mobileSdkAppId" value="1:865018617157:android:58f9685c10c0f1a077f22c" />
+                  <option name="projectId" value="firestoreapp-b9da9" />
+                  <option name="projectNumber" value="865018617157" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
