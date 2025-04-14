@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "865018617157",
+    "project_id": "firestoreapp-b9da9",
+    "storage_bucket": "firestoreapp-b9da9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865018617157:android:58f9685c10c0f1a077f22c",
+        "android_client_info": {
+          "package_name": "ir.hajkarami.firestoreapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH_Mdk2scfnZc7qJm1VHwCUuhv35HL3wU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
